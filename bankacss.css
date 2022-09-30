@@ -1,0 +1,182 @@
+#prihlasenieMeno , #prihlasenieHeslo{
+    max-width: 100px;
+    text-align: center;
+    border: 1px solid transparent;
+   	padding: .375rem .75rem;
+    border-radius: .25rem;
+    background-color: black;
+    color: white;
+}
+#prevodMeno, #prevodSuma, #uverSuma , #zrusenieMeno, #zruseniePin{
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 120px;
+    text-align: center;
+    border: 1px solid transparent;
+   	padding: .375rem .75rem;
+    border-radius: .25rem;
+    color: black;
+    background-color: white;
+}
+
+.bi{
+    font-size: 1.6rem;
+    color: white;
+}
+#prihlas{
+    color: black;
+}
+.prevodOkno{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    color: white;
+}
+.uverOkno{
+    background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    color: white;
+    padding: 0 10px;
+
+}
+.zrusenieOkno{
+    background-image: radial-gradient( circle 905.6px at 4.9% 7.9%,  rgba(218,0,0,1) 14.1%, rgba(168,2,144,1) 65%, rgba(102,2,110,1) 90% );
+    color: white;
+
+}
+.medzera{
+    padding: 1rem;
+}
+#bankoveOkno{
+    margin-top: 50px;
+    display: none;
+}
+.infoucty{
+    font-size: 1.05rem;
+}
+.logobanky{
+    padding: 0 100px;
+}
+.h2kabalancu{
+    margin:0;
+}
+#celkovyBalanc{
+font-size: 3rem;
+padding-top: 20px;
+padding-right: 30px;
+}
+.pohyb{
+    border-bottom: 1px solid #eee;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+.pohybBtn{
+    text-align: center;
+    border: 1px solid transparent;
+   	padding: .375rem .75rem;
+    border-radius: 10rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+.pohyb--vklad{
+    background-image: linear-gradient( 73.1deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+    color: white;
+}
+.pohyb--vyber{
+    background-image: radial-gradient( circle 905.6px at 4.9% 7.9%,  rgba(218,0,0,1) 14.1%, rgba(168,2,144,1) 65%, rgba(102,2,110,1) 90% );
+    color: white;
+}
+.pohybDatum{
+    color: #666;
+    font-weight: 500;
+}
+.pohybSuma{
+    margin-left: auto;
+    font-size: 1.5rem;
+}
+#uvitanie{
+    font-size: 2rem;
+}
+.vypisy{
+    margin-bottom: 20px;
+}
+section{
+    max-width: 1000px;
+    margin: 20px auto;
+}
+#vklady, #vybery{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding-left: 10px;
+}
+#vklady{
+    color: #66c873;
+}
+#vybery{
+    color: #f5465d;
+}
+.ukazovatele p{
+    margin: 0 !important;
+    display: inline-block;
+}
+#zobrazVklad , #zobrazVyber , #zobrazPohyb{
+    font-size: 1.1rem;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+}
+#odhlasenie{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+/* Media */
+@media (max-width: 770px) {
+    .nav {
+    justify-content: space-around !important;
+    }
+    .prihlasenie{
+        margin-top: 15px;
+    }
+    #celkovyBalanc{
+       padding:0 ;
+       margin: 0;
+    }
+    .uverOkno {
+        margin: 10px 0 !important;
+    }
+    .vypisy{
+        border: 0px;
+    }
+    #vybery{
+        margin: 20px 0;
+    }
+    #uvitanie{
+        margin: 0 !important;
+    }
+    #zobrazVyber{
+        margin: 10px 0px;
+    }
+    #uverOdosli{
+        margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .bi{
+        display: block;
+    }
+    #prevodMeno, #zrusenieMeno{
+        margin-bottom: 10px;
+    }
+    #prihlas{
+        display: inline-block !important;
+    }
+    body{
+        font-size: 1.2rem;
+    }
+    .logobanky{
+        display: block;
+    }
+  }

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mini hra - Uhádni číslo!">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Web,Website,Developing">
+    <meta name="author" content="Patrik Šubjak">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+      <!-- Fonty -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Quicksand&display=swap" rel="stylesheet">
+      <!-- Moje CSS -->
+      <link rel="stylesheet" href="/hlavnecss.css">
+      <link rel="stylesheet" href="/banka/bankacss.css">
+      <!-- Moje Ikony -->
+      <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+      <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
+    <title>Váš bankový účet</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand ml-5" href="/index.html">
+          <div class="logo text-center">
+            <div class="hlavnynapis">Patrik</div>
+              <div class="podnapis">Šubjak</div>
+          </div>
+       </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Hlavná Stránka</span></a>
+            </li>
+          </ul>
+        </div></div>
+      </nav>
+  
+      <div class="jumbotron jumbotron-fluid text-center">
+          <div class="container">
+            <h1 class="display-3">Projekt Banka - Váš bankový účet!</h1>
+            <p class="lead">Táto banková aplikácia je vytvorená podľa predlohy Jonasa Schmedtmanna.</p>
+          </div>
+        </div>
+
+        <div class="infobanka text-center">
+          <h2>Informácie k bankovej aplikácii</h2>
+          <h4 class="pt-2">Prihlasovacie mená a heslá</h4>
+          <div class="infoucty">
+            <p>1. Patrik Šubjak - <strong>meno: pš , heslo: 1111</strong> <br>
+              2. Styra Šubjak - <strong>meno: sš , heslo: 2222</strong> <br>
+              3. Knedlík Laco - <strong>meno: kl , heslo: 3333</strong> <br>
+              1. Peter Perfekt - <strong>meno: pp , heslo: 4444</strong> <br> </p>
+        
+        <h3 id="prihlaseny">Prihlás sa pre prácu s aplikáciou. 🟢</h3>
+          
+    
+        </div></div>
+
+        <div class="container-fluid">
+        <ul class="nav justify-content-center align-items-center">
+          <li class="nav-item">
+            <p class="ml-5" id="uvitanie">Vitaj Použivateľ</p>
+          </li>
+          <li class="nav-item">
+            <img src="/obrazky/bankalogo.png" alt="Logo Banky" class="img-fluid logobanky">
+          </li>
+          <li class="nav-item prihlasenie">
+           <input type="text" placeholder="meno" id="prihlasenieMeno">
+           <input type="text" placeholder="heslo" id="prihlasenieHeslo">
+           <i class="bi bi-arrow-right-circle-fill" id="prihlas"></i>
+          </li>
+        </ul>
+      </div>
+      <h2 class="text-center" id="infoZrusenie"></h2>
+
+     
+
+      <div class="container" id="bankoveOkno">
+        <div class="row mb-5">
+         <div class="col-md-6 text-left">
+           <h2 class="h2kabalancu">Balanc účtu</h2>
+           <p id="casBalancu" >12.10 2021 07:01</p>
+          </div>
+         <div class="col-md-6 text-right">
+          <div id="celkovyBalanc">20 000 €</div>
+           
+          </div>
+        </div>
+
+       
+
+        <div class="row text-center">
+
+          <div class="col-md prevodOkno">
+            <h4 class="mb-4 pt-3">Prevod</h4>
+                <input type="text" placeholder="Meno" id="prevodMeno"> 
+                <input type="number" placeholder="Suma" id="prevodSuma"> 
+                <i class="bi bi-arrow-right-circle-fill" id="prevodOdosli"></i>
+                <p class="pb-3" ></p>
+          </div>
+          
+          <div class="col-md uverOkno mr-3 ml-3">
+             <h4 class="mb-4 pt-3 ">Úver</h4>
+                <input type="number" placeholder="Suma" id="uverSuma"> 
+                <i class="bi bi-arrow-right-circle-fill" id="uverOdosli"></i>
+                <p class="pb-3" ></p>
+          </div>
+          
+          <div class="col-md zrusenieOkno">
+           <h4 class="mb-4 pt-3">Zrušenie účtu</h4>
+           <input type="text" placeholder="Meno" id="zrusenieMeno"> 
+           <input type="password" placeholder="Pin" id="zruseniePin"> 
+           <i class="bi bi-arrow-right-circle-fill" id="zrusenieOdosli"></i>
+           <p class="pb-3" ></p>
+          </div>
+          </div>
+          
+        <section>
+        <div class="vypisy" id="vypisy">
+          <div class="row ">
+            <div class="pohyb col-md-11 d-flex justify-content-center">
+              <div class="pohybBtn pohyb--vklad">2 Vklad</div>
+              <div class="pohybDatum align-self-center">13.10.2021 6:36</div>
+              <div class="pohybSuma">3900,00 €</div>
+            </div> 
+          </div>
+          
+            <div class="pohyb col-md-11 d-flex justify-content-center">
+              <div class="pohybBtn pohyb--vyber">1 Výber</div>
+              <div class="pohybDatum align-self-center">13.10.2021 7:36</div>
+              <div class="pohybSuma"> 250,00 €</div>
+            </div>
+          </div>
+
+
+            <div class="row ukazovatele text-center">
+              <div class="col-md">
+                <p>Vklady<div id="vklady">27 000,34 €</div></p>
+              </div>
+
+              <div class="col-md"><p>Výbery<div id="vybery">18 834,39 €</div></p></div>
+              <div class="col-md"> <input type="button" value="Zobrazenie Vkladov" id="zobrazVklad"></div>
+              <div class="col-md"> <input type="button" value="Zobrazenie Výberov" id="zobrazVyber"></div>
+              <div class="col-md"> <input type="button" value="Zobrazenie Pohybov" id="zobrazPohyb"></div>
+            </div>
+            
+            <div class="row">
+              <div class="col"><p class="mt-4 text-center" id="odhlasenie">Budeš odhlasený za 04:59</p></div>
+            </div>
+            
+         
+            
+
+
+              </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </section>
+      
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+        <footer>
+            <div class="container">
+            <div class="row">
+              <div class="col-sm-6 motto">"What we do in life, echoes in Eternity."</div>
+              <div class="col-sm-6 copy">&copy; Patrik Šubjak 2022</div>
+          </div>
+          </div> 
+          </footer>
+    <script src="/banka/bankajs.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
